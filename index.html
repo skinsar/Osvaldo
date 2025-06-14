@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a los 80/90</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a los 80/90</h1>
+        <nav>
+            <ul>
+                <li><a href="#tema-favorito">Tema Favorito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="info-section">
+        <div class="profile-image">
+            <img src="contenido/imagenes/osvaldo.jpg" alt="Foto de Osvaldo">
+        </div>
+        <div class="profile-description">
+            <p>¡Hola! Soy Osvaldo, el anfitrión de "Bienvenido a los 80/90". Desde siempre, la música ha sido mi gran pasión, y estas décadas en particular guardan los sonidos y las historias que más me inspiran. Mi deseo es compartir contigo esa energía y nostalgia, trayéndote los clásicos que te hicieron vibrar y quizás alguna joya oculta que te sorprenda. ¡Gracias por sintonizar y por ser parte de este viaje musical!</p>
+        </div>
+    </section>
+
+    <section class="hero" id="inicio">
+        <h2>¡Prepárate para un viaje en el tiempo!</h2>
+        <div class="vinyl-placeholder">
+            <img src="contenido/imagenes/logo-vinilo.png" alt="Vinilo Bienvenido a los 80/90" id="spinningVinyl">
+        </div>
+
+            <div class="radio-player-container">
+            <h3>Radio en Vivo Ahora:</h3>
+            <audio id="radioStreamPlayer" controls preload="none">
+                <source src="https://radio01.ferozo.com/proxy/ra01001135?mp=/stream" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+            <p class="schedule">Lunes a Viernes -20:00 a 21:00</p>
+            <p class="stream-note">Si el reproductor no carga, haz <a href="https://radio01.ferozo.com/proxy/ra01001135?mp=/stream" target="_blank" rel="noopener noreferrer">clic aquí</a> para intentar abrir el stream directamente.</p>
+        </div>
+    </section>
+
+    <section class="favorite-song" id="tema-favorito">
+        <h2>¡Canción destacada de la semana!</h2>
+        <h3>Wind Of Change - Scorpions</h3>
+        <div class="audio-player-container">
+            <audio id="favoriteSongPlayer" controls>
+                <source src="contenido/musica/Scorpions-Wind-Of-Change.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+            <p>
+                Lanzada en 1990, "Wind Of Change" se convirtió en un himno poderoso que trascendió fronteras,
+                simbolizando los cambios políticos y sociales de finales de la Guerra Fría y la caída del Muro de Berlín.
+                Su melodía melancólica y su mensaje de esperanza la convirtieron en un símbolo de una nueva era.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 Bienvenido a los 80/90 - Un viaje musical inigualable.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
